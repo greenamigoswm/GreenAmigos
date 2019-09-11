@@ -1,0 +1,14 @@
+*{
+	font-family: 'Gloria Hallelujah','Montserrat','Rationale','Gloria Hallelujah';
+}
+
+/* .main div{
+	position: relative;
+	border:2px solid blue;
+} */
+
+.row div canvas{
+	position: relative;
+	float:right;
+
+}
