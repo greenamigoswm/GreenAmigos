@@ -1,1 +1,1 @@
-# GreenAmigos
+# Green-Amigos

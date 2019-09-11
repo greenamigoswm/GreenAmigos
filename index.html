@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes" />
+        <meta name="description" content="Green Amigos is a startup company that spreads awareness among people using initial level segregation and collection while bridging the gap between demand and supply of the waste paper hence reducing the import of waste paper from different countries." />
+        <meta name="Keywords" content="Waste Paper Efficient Management,Green Amigos,Reduce,Reuse,Recycle,Allahabad, U.P" />
+        <meta name="google-site-verification" content="MSki3zt-kYG_fgMpe4fYo6olxan-KvtKVRDGIihaNQ4" />
+        <title>Green Amigos</title>
+        <!-- CSS  -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/cshake.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <!--Import jQuery before materialize.js-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <!-- Angular.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="js/clientsController.js"></script>
+        <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+        <script src="js/scrollmagic/minified/TweenMax.min.js"></script>
+        <script src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body id="home_page">
+        <script type="text/javascript">
+        // init controller
+        var controller = new ScrollMagic.Controller();
+        </script>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper container">
+                    <ul class="left hide-on-med-and-down">
+                        <li class="active"><a href="index.html" class="caps">Home</a></li>
+                        <li><a href="about.html" class="caps">About us</a></li>
+                        <li><a href="facts.html" class="caps">Facts</a></li>
+                        <li><a href="gallery.html" class="caps">Gallery</a></li>
+                        <li><a href="clients.html" class="caps">Our Clients</a></li>
+                        <li><a href="quotations.html" class="caps">Quotations</a></li>
+                        <li><a href="team.html" class="caps">Our Team</a></li>
+                        <!-- <li><a href="sell.html" class="caps">Sell Your Scrap</a></li> -->
+                        <li><a href="contact.html" class="caps">Contact us</a></li>
+                    </ul>
+                    <a id="logo-container" href="index.html" class="brand-logo custom-text right caps">
+                    <img src="logo.png" alt="Green Amigos" class="logo-icon"></a>
+                    <ul id="nav-mobile" class="side-nav">
+                        <li class="active"><a href="index.html" class="caps">Home</a></li>
+                        <li><a href="about.html" class="caps">About us</a></li>
+                        <li><a href="facts.html" class="caps">Facts</a></li>
+                        <li><a href="gallery.html" class="caps">Gallery</a></li>
+                        <li><a href="clients.html" class="caps">Our Clients</a></li>
+                        <li><a href="quotations.html" class="caps">Quotations</a></li>
+                        <li><a href="team.html" class="caps">Our Team</a></li>
+                        <li><a href="sell.html" class="caps">Sell Your Scrap</a></li>
+                        <li><a href="contact.html" class="caps">Contact us</a></li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        </div>
+     
+        <div class="slider fullscreen" style="position:relative;margin-top:-25px">
+            <ul class="slides">
+                <li>
+                    <img class="cover-pic" src="slides/slide1.JPG">
+                </li>
+                <li>
+                    <img class="cover-pic" src="slides/slide2.JPG">
+                </li>
+                <li>
+                    <img class="cover-pic" src="slides/slide3.JPG">
+                </li>
+                <li>
+                    <img class="cover-pic" src="slides/slide4.JPG">
+                </li>
+            </ul>
+        </div>
+        <div ng-app="myApp" ng-controller="clientsCtrl">
+            <marquee scroll delay=10 bgcolor="#33691e" class="white-text custom-text2" style="font-size:23px">
+            We buy all types of scrap paper
+            &nbsp;&nbsp;&nbsp;&nbsp;  &#9679; &nbsp;&nbsp;&nbsp;&nbsp;
+            Our Clients &nbsp;&nbsp;: &nbsp;&nbsp;
+            <ul style="display:inline">
+                <li ng-repeat = "x in clients" style= "display:inline">
+                    {{x.title}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+            </ul>
+            Total recycled material &nbsp;&nbsp;: &nbsp;&nbsp; {{total}} kg
+            &nbsp;&nbsp;&nbsp;&nbsp;  &#9679; &nbsp;&nbsp;&nbsp;&nbsp;
+            Our dear Clients , spread the news ! Be proud ! Your valiant efforts have helped Green Amigos in saving <span>{{trees}}</span> trees . And the number is overgrowing . Now that's what we call a cause to celebrate . We express our gratitude and hope you keep contributing to this noble cause .
+            </marquee>
+        </div>
+        <div class="row" id="anims">
+            <div class="col l4 m6 s12">
+                <center style="margin-top:35px">
+                
+                <div class="row">
+                    <div class="col l4 m4 s4" style="padding:8px">
+                        <i class="material-icons large right">store</i>
+                    </div>
+                    <div class="col l8 m8 s8">
+                        <p class="custom-text2 center flow_chart" style="display:none;font-size: 28px">Source</p>
+                    </div>
+                </div>
+                <div class="col l8 offset-l4 m8 offset-m4 s8 offset-s4" style="color:#00695c"><b><i class="material-icons small" style="transform: rotate(180deg)">navigation</i></b></div>
+                <div class="row">
+                    <div class="col l4 m4 s4" style="padding:8px">
+                        <i class="material-icons large right">import_export</i>
+                    </div>
+                    <div class="col l8 m8 s8">
+                        <p class="custom-text2 center green-text text-darken-2 flow_chart" style="display:none;font-size: 34px">Green Amigos</p>
+                    </div>
+                </div>
+                <div class="col l8 offset-l4 m8 offset-m4 s8 offset-s4" style="color:#00695c"><b><i class="material-icons small" style="transform: rotate(180deg)">navigation</i></b></div>
+                <div class="row">
+                    <div class="col l4 m4 s4" style="padding-right:10px;padding-top: 15px">
+                        <img src="icons/factory.svg" class="right green-text" height="60" width="60" >
+                    </div>
+                    <div class="col l8 m8 s8">
+                        <p class="custom-text2 center flow_chart" style="display:none;font-size: 28px">Recycling plant</p>
+                    </div>
+                </div>
+                
+                </center>
+            </div>
+            <div class="col l4 m4 s12 hide-on-med-and-down">
+                <div id="animate1">
+                    <img src="logo (Medium).png" id="tree">
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="white-text" style="margin-top:40px;border:solid 1px green;background:green;opacity:0.6">
+                    
+                    <h1 class="custom-text2 center" id="field1">
+                    </h1>
+                    <h2 class="custom-text2 center">Trees saved</h2>
+                    <h1 class="custom-text2 center" id="field2">
+                    </h1>
+                    <h2 class="custom-text2 center">Clients</h2>
+                </div>
+            </div>
+        </div>
+        <br><br>
+            <a href="javascript:;"><button class="btn btn-primary btn-lg" style="z-index: 999; float: right; bottom: 5%; position: fixed;    right: 0em; bottom: 0em;">Sell Your Scrap</button></a>
+        <br><br>
+        <h3 class="custom-text2 white-text center" style="padding:3px;background:green;opacity:0.6"><b>SOME OF OUR CLIENTS</b></h3>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col l10 offset-l1 m12 s12">
+                    <div class="col l3 m3 s6"><img src = "logos/killer.jpg" alt="killer" class="responsive-img" ></div>
+                    <div class="col l3 m3 s6"><img src = "logos/arrow.gif" alt="arrow" class="responsive-img"></div>
+                    <div class="col l3 m3 s6"><img src = "logos/liberty.png" alt="liberty" class="responsive-img"></div>
+                    <div class="col l3 m3 s6"><img src = "logos/raymond.png" alt="raymond" class="responsive-img"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 m4 s12">
+                        <div class="row">
+                            <h5 class="green-text"><strong>Green Amigos</strong></h5>
+                            <p class="white-text foot">We bridge the gap between demand and supply of waste paper hence reducing the import of waste paper from different countries.</p>
+                        </div>
+                    </div>
+                    <div class="col l3 offset-l1 s12 m3 offset-m1">
+                        <h6 class="green-text"><strong>Our Links</strong></h6>
+                        <ul>
+                            <li><a href="about.html" class="caps white-text">About us</a></li>
+                            <li><a href="facts.html" class="caps white-text">Facts</a></li>
+                            <li><a href="gallery.html" class="caps white-text">Gallery</a></li>
+                            <li><a href="clients.html" class="caps white-text">Our Clients</a></li>
+                            <li><a href="quotations.html" class="caps white-text">Quotations</a></li>
+                            <li><a href="team.html" class="caps white-text">Our Team</a></li>
+                            <li><a href="contact.html" class="caps white-text">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l4 s12 m4">
+                        <h6 class="green-text"><strong>Contact Info</strong></h6>
+                        <br>
+                        <div class="row">
+                            <div class="col l1 s1 m1"><i class="material-icons prefix green-text">phone</i></div>
+                            <div class="col l8 offset-l1 s11 m8 offset-m1">
+                                <p class="white-text foot" style="display:inline;">+91 772 485 9910</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l1 s1 m1"><i class="material-icons prefix green-text">email</i></div>
+                            <div class="col l8 offset-l1 s11 m8 offset-m1">
+                                <p class="white-text foot" style="display:inline;">greenamigoswm@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l1 s1 m1"><i class="material-icons prefix green-text">room</i></div>
+                            <div class="col l8 offset-l1 s11 m8 offset-m1">
+                                <p class="white-text foot" style="display:inline;">GI-79 , KALINDIPURAM, RAJROOPPUR, ALLAHABAD , 211011</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-copyright">
+                <div class="container foot row">
+                    <div class="col l4 m4 s12">© 2019 Copyright Green Amigos. All rights reserved.</div>
+                </div>
+            </div>
+        </footer>    
+        <script>
+        $(document).ready(function() {
+        $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll*2.5 >= $("#anims").offset().top ){
+        start();
+        $(".flow_chart").slideDown("slow");
+        }
+        
+        });
+        // build scene
+        if ( $(window).width() > 1024 ) {
+        var scene = new ScrollMagic.Scene({
+        offset: 280,
+        duration: 380,
+        })
+        .setTween("#animate1", 0.5, {
+        backgroundColor: "transparent",
+        ease: Cubic.easeOut,
+        scaleY: 2.8,
+        scaleX: 2.8
+        })
+        .addTo(controller);
+        }
+        
+        $('.slider').slider({
+        full_width: true
+        });
+        $('.button-collapse').sideNav();
+        });
+        </script>
+    </body>
+</html>
