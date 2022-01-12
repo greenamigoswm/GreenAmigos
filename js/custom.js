@@ -1,4 +1,4 @@
-var i = 285600,j = 142850,tree = 285621, clients = 142860;
+var i = 5265,j = 5285,tree = 76845, clients = 76860;
 function start() {
   	
   	if(i>tree) 
